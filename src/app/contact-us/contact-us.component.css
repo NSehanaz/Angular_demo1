@@ -1,0 +1,18 @@
+.submit{
+    padding-top: 10px;
+}
+.addressContainer{
+    display: flex;
+
+}
+.address{
+    box-shadow: 2px 2px 3px 2px;
+    background: #afb7ec;
+    height:auto;
+    height: 300px;
+    width: 400px;
+    text-align: -webkit-center;
+    display: block;
+    margin-top: 80px;
+    /* padding-left: 1000px; */
+}

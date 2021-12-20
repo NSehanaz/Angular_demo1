@@ -1,0 +1,38 @@
+<div class="col-12 p-5 float-start">
+    <div class="col-12 p-0 float-start text-center">
+        <h2 class="col-12 p-0 float-start fdarkblue"><u>Recent Recruiters</u></h2>
+        <div class="col-12 p-0 float-start mt-5">
+            <div *ngFor="let item of recuitDetails; let i = index" class="col-3 p-2 float-start">
+                <div [ngClass]="i%2==0?'Orgbg1':'Orgbg2'"  class="col-12 p-3 float-start OrgMain">
+                    <h3 [ngClass]="i%2==0?'fwhite':'fblue'">{{item.name}}</h3>
+                    <img class="ImgStyle" [src]="item.path" width="100%" height="150">
+                    <div><b>Openings: </b><span>{{item.openings}}</span></div>
+                    <div><b>Package: </b><span>{{item.package}}</span></div>
+                    <div><b>Location: </b><span>{{item.location}}</span></div>
+                    <div><b>Qualification: </b><span>{{item.qualification}}</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 p-0 float-start text-center">
+        <h2 class="col-12 p-0 float-start fdarkblue mt-4"><u>Students placed in the year 2021</u></h2>
+        <div class="col-12 p-0 mt-4 float-start text-center">
+            <table class="table">
+                <tr>
+                    <th>Sl.no</th>
+                    <th>Student name</th>
+                    <th>Branch name</th>
+                    <th>Recruiter Name</th>
+                    <th>Package</th>
+                </tr>
+                <tr [ngStyle]="i%2==0?{'background':'rgb(193, 157, 226)'}:{'background':'white'}"  *ngFor="let item of studentDetail; let i=index">
+                    <td>{{item.Sno}}</td>
+                    <td>{{item.studentName}}</td>
+                    <td>{{item.branchName}}</td>
+                    <td>{{item.recruiterName}}</td>
+                    <td>{{item.package}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+.HeaderMain{
+    /* background-color: yellowgreen; */
+    /* background: linear-gradient(359deg, #0b6f74fc, #681818); */
+    background:#563d7c;
+    font-size: 50px;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    height: 115px;
+    align-items: center;
+    
+}
+h1{
+    margin:0px;
+    font-size:75px;
+    color: rosybrown;
+    border-left:1px solid whitesmoke;
+    margin-left: 50px;
+    padding-left: 30px;
+}
+.NotifyContainer{
+margin-left: auto;
+position: relative;
+}
+.NotifyMain{   
+    position: absolute;
+    background: white;
+    border-radius: 6px;
+    right: 10px;
+    font-size: 15px;
+    padding: 10px;
+    box-shadow: 0 0 7px black;
+    width: 250px;
+}
+.NotifyItems{
+    border-bottom: 1px solid #c2c2c2c2;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.LoginContainer{
+    /* margin-left: auto; */
+    position: relative;
+    margin-left: 10px;
+    }
+    .LoginMain{   
+        position: absolute;
+        background: white;
+        border-radius: 6px;
+        right: 10px;
+        font-size: 15px;
+        padding: 10px;
+        box-shadow: 0 0 7px black;
+        width: 250px;
+    }
+    .LoginItems{
+        border-bottom: 1px solid #c2c2c2c2;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .LoginItems:hover{
+        background-color: #14b0ee;
+        color: white;
+        cursor: pointer;
+    }

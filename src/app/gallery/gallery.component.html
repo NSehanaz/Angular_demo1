@@ -1,0 +1,16 @@
+<div class="col-12 p-0 float-start">
+    <table class="table table-stripped">
+        <tr>
+        <th>User Id</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Body</th>
+    </tr>
+    <tr *ngFor="let item of dataArray">
+        <td>{{item.userId}}</td>
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.body}}</td>
+    </tr>
+    </table>
+</div>

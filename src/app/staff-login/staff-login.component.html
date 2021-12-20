@@ -1,0 +1,29 @@
+<div class="col-12 p-5 float-start">
+    <h2 class="col-12 p-0 float-start mbottom"><u>Staff Login</u></h2>
+    <div class="col-6 p-0">
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email" name="email" formControlName="email">
+                <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" id="emailHelp" class="text-danger">Email cannot be empty</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputMobile">Mobile number</label>
+                <input type="number" class="form-control" id="exampleInputMobile" aria-describedby="emailHelp"
+                    placeholder="Enter mobile number" name="number" formControlName="mobile">
+                <div *ngIf="loginForm.get('mobile')?.invalid && loginForm.get('mobile')?.touched" id="mobileError" class="text-danger">Enter a valid mobile number</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                    name="password" formControlName="password">
+            <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" id="passwordHelp" class="text-danger">Password cannot be empty</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</div>

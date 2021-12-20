@@ -1,0 +1,29 @@
+<div class="col-12 p-5 float-start">
+    <h2 class="col-12 p-0 float-start mbottom"><u>Student Login</u></h2>
+    <div class="col-6 p-0">
+
+        <form (ngSubmit)="onSubmit(localVariable)" #localVariable="ngForm">
+            <div class="mb-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email" name="email" ngModel required #email="ngModel">
+                <div *ngIf="email.invalid && email.touched" id="emailHelp" class="text-danger">Email cannot be empty</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputMobile">Mobile number</label>
+                <input type="number" class="form-control" id="exampleInputMobile" aria-describedby="emailHelp"
+                    placeholder="Enter mobile number" name="number" ngModel #mobile="ngModel"pattern="[789][0-9]{9}">
+                <div *ngIf="mobile.invalid && mobile.touched" id="mobileError" class="text-danger">Enter a valid mobile number</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                    name="password" ngModel required #password="ngModel">
+            <div *ngIf="password.invalid && password.touched" id="passwordHelp" class="text-danger">Password cannot be empty</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</div>

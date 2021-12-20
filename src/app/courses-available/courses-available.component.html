@@ -1,0 +1,23 @@
+<div class="col-12 p-5 float-start  text-center">
+    <h2 class="col-12 p-5 float-start fdarkblue"><u>Courses Offerd in our university</u></h2>
+    <table class="table table-bordered text-light tablestyle">
+        <!-- <thead class="thead-dark"> -->
+        <tr>
+            <th>Sno</th>
+            <th>Courses</th>
+            <th>Total Seats</th>
+            <th>Government Reservation Seats</th>
+            <th>Self Financing Seats</th>
+            <th>Course Start Date</th>
+        </tr>
+    <!-- </thead> -->
+        <tr *ngFor="let item of service.courses">
+            <td>{{item.Sno}}</td>
+            <td>{{item.course | uppercase}}</td>
+            <td>{{item.total_seats}}</td>
+            <td>{{item.govt_seats}}</td>
+            <td>{{item.self_fin_seats}}</td>
+            <td>{{item.course_start_date}}</td>
+        </tr>
+    </table>
+</div>

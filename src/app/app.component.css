@@ -1,0 +1,42 @@
+.Main{
+    /* background: linear-gradient(45deg, #be6f6f, transparent); */
+    height: 100%;
+    width: 100%;
+    float: left;
+    overflow-y: auto;
+}
+.Header{
+    width: 100%;
+    float: left;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    
+}
+.SecondRow{
+    width: 100%;
+    float: left;
+    height: 100%;
+    margin-top: 115px;
+}
+.Sidenav{
+    height: 100%;
+    width: 20%;
+    float: left;
+    position: fixed;
+}
+.MainContent{
+    /* background:linear-gradient(45deg, #7a7575, transparent); */
+    /* background: linear-gradient(45deg, #be6f6f, transparent); */
+    height: auto;
+    width: 80%;
+    float: left;
+    margin-left: 20%;
+}
+.Footer{
+    width: 100%;
+    float: left;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999;
+}

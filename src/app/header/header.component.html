@@ -1,0 +1,21 @@
+<div class="HeaderMain">
+    <img src="../../assets/Manipal-University-Logo.webp" width=100>
+    <h1>{{title}}</h1>
+
+<div class="NotifyContainer">
+    <img (click)="toggleNotification()" src="../../assets/notify icon.png" width="50">
+    <div *ngIf="showNotification" class=NotifyMain>
+        <div class="NotifyItems">symposium dates are announsed...</div>
+        <div class="NotifyItems">Internal exam dates for B.E is announsed...</div>
+    </div>
+</div>
+
+<div class="LoginContainer">
+    <img (click)="toggleLogin()" src="../../assets/login-logo.png" width="50">
+    <div *ngIf="showLogin" class=LoginMain>
+        <div routerLink="/student-login" (click)="showLogin=false" class="LoginItems">Students Login</div>
+        <div routerLink="/staff-login" (click)="showLogin=false" class="LoginItems">Staff Login</div>
+    </div>
+</div>
+ 
+</div>
